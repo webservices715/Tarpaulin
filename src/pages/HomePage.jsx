@@ -7,7 +7,7 @@ const HomePage = () => {
         <div>
             <HeroSection />
             <AboutUs/>
-            <DeliveryServices/>
+            <DeliveryServices />
         </div>
     )   
 };
