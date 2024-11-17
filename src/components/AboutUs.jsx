@@ -3,7 +3,7 @@ import aboutUsImg from "../assets/aboutUs.jpg";
 const AboutUs = () => {
   return (
     <section className="bg-gray-100 py-12 ml-24 mt-24 h-[80vh] relative -z-50">
-      <div className="absolute top-[-2%] border border-black left-[15%]">
+      <div className="absolute top-[-6%]  left-[15%]">
         <div className="container flex z-50">
           <div className="bg-[#6345FE] text-white p-6 rounded-lg shadow-lg relative w-[35vw] h-[25rem]  border-white border-[13px]">
             <div className="space-y-6">
@@ -27,15 +27,15 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="border  w-[30vw] h-[20rem]  flex justify-center text-[30px] font-[700] text-[#6345FE]">
+          <div className=" w-[30vw] h-[20rem]  flex justify-center text-[30px] font-[700] text-[#6345FE]">
             About Us
           </div>
         </div>
-        <div className=" border border-black">
+        <div className="">
           <img
             src={aboutUsImg}
             alt="About Us"
-            className="w-[70%] h-[40%] object-cover top-[80%] left-[15%] z-0 absolute"
+            className="w-full h-full object-cover top-[80%] left-[15%] -z-40 absolute"
           />
         </div>
       </div>
