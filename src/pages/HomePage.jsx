@@ -1,11 +1,9 @@
-import AboutUs from "../components/Aboutus";
-import MainSection from "../components/MainSection";
+import HeroSection from "../components/HeroSection";
 
 const HomePage = () => {
     return (
         <div>
-            <MainSection/>
-            <AboutUs/>
+            <HeroSection />
         </div>
     )   
 };
