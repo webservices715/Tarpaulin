@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className="hidden lg:block absolute top-[50%] left-[15%]">
         <div className="container flex z-50">
           {/* Purple Card */}
-          <div className="bg-[#6345FE] text-white p-6 relative w-[35vw] h-[25rem] border-white border-[13px]">
+          <div className="bg-[#6345FE] text-white p-6 relative w-[38vw] h-[25rem] border-white border-[13px]">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <span className="bg-orange-400 h-4 w-4 rounded-full mt-1"></span>
@@ -36,14 +36,15 @@ const AboutUs = () => {
           </div>
         </div>
         {/* Image */}
-        <div>
+        <div className="">
           <img
             src={aboutUsImg}
             alt="About Us"
-            className="w-full h-full object-cover top-[80%] left-[15%] -z-40 absolute"
+            className="w-[60rem] h-[30rem] object-contain top-[80%] left-[15%] -z-40 absolute"
           />
         </div>
       </div>
+
 
       {/* For SM and MD Screens */}
       <div className=" lg:hidden flex flex-col  px-4">
