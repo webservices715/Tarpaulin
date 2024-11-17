@@ -2,7 +2,7 @@ import React from "react";
 
 const ReservationSection = () => {
   return (
-    <section className="py-10">
+    <section>
       <div className="container h-screen mx-auto flex flex-wrap">
         {/* Form Section */}
         <div className="w-full lg:w-1/2 bg-[#6345fe] px-6 sm:px-16 md:px-32 flex flex-col justify-center text-white p-10">
