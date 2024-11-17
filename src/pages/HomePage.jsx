@@ -3,6 +3,7 @@ import DeliveryServices from "../components/DeliveryServices";
 import HeroSection from "../components/HeroSection";
 import MapSection from "../components/MapSection";
 import OfficeSection from "../components/OfficeSection";
+import WhyChooseUsSection from "../components/WhyChooseUs";
 
 const HomePage = () => {
   return (
@@ -13,9 +14,8 @@ const HomePage = () => {
         <DeliveryServices />
       </div>
       <MapSection />
-
-      
       <OfficeSection />
+      <WhyChooseUsSection />
     </div>
   );
 };
