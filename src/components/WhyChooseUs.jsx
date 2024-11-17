@@ -9,7 +9,7 @@ const WhyChooseUsSection = () => {
         <h2 className="text-3xl font-bold text-[#6345fe] mb-6">Why Choose Us</h2>
         <div className="flex flex-col md:flex-row justify-center gap-8">
           {/* Highly Skilled Team */}
-          <div className="text-center md:text-left max-w-[300px] bg-white p-6 rounded-lg shadow-lg">
+          <div className="text-center md:text-left max-w-[300px] bg-white p-6 rounded-lg ">
             <FaUsers className="text-4xl text-[#6345fe] mb-4 mx-auto" /> {/* Icon */}
             <h3 className="text-xl font-bold mb-4">Highly Skilled Team</h3>
             <p className="text-gray-500">
@@ -18,7 +18,7 @@ const WhyChooseUsSection = () => {
           </div>
 
           {/* Strong Expertise */}
-          <div className="text-center md:text-left max-w-[300px] bg-white p-6 rounded-lg shadow-lg">
+          <div className="text-center md:text-left max-w-[300px] bg-white p-6 rounded-lg ">
             <FaTools className="text-4xl text-[#6345fe] mb-4 mx-auto" /> {/* Icon */}
             <h3 className="text-xl font-bold mb-4">Strong Expertise</h3>
             <p className="text-gray-500">
@@ -27,7 +27,7 @@ const WhyChooseUsSection = () => {
           </div>
 
           {/* Dedicated Support */}
-          <div className="text-center md:text-left max-w-[300px] bg-white p-6 rounded-lg shadow-lg">
+          <div className="text-center md:text-left max-w-[300px] bg-white p-6 rounded-lg ">
             <FaHeadset className="text-4xl text-[#6345fe] mb-4 mx-auto" /> {/* Icon */}
             <h3 className="text-xl font-bold mb-4">Dedicated Support</h3>
             <p className="text-gray-500">
