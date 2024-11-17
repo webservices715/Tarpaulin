@@ -8,7 +8,7 @@ import {
 
 const DeliveryServices = () => {
   return (
-    <section className="flex flex-col lg:flex-row justify-center min-h-screen px-4 lg:px-20 py-40 bg-white">
+    <section className="flex flex-col lg:flex-row justify-center min-h-screen px-4 lg:px-20 py-40 bg-gray-50">
       {/* Left Side */}
       <div className="max-w-lg text-left">
         <h1 className="text-3xl lg:font-bold lg:text-5xl text-[#6345fe]  lg:text-left">
@@ -35,8 +35,8 @@ const DeliveryServices = () => {
       </div>
 
       {/* Right Side */}
-      <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-full lg:w-[40%] gap-12 mt-12 lg:mt-0 lg:ml-16  lg:text-left">
-        <div className="flex flex-col lg:items-start">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-full lg:w-[50%] gap-12 mt-12 lg:mt-0 lg:ml-16  lg:text-left">
+        <div className="flex flex-col lg:items-start shadow bg-white hover:shadow-xl hover:scale-y-105 transition-all duration-300 cursor-pointer py-3 px-5">
           <MdOutlineAssignment className="text-purple-600 " size={50} />
           <h3 className="text-2xl font-bold my-4">Tarpaulin Covering</h3>
           <p className="text-gray-600 mt-2 w-[90%]">
@@ -46,7 +46,7 @@ const DeliveryServices = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:items-start">
+        <div className="flex flex-col lg:items-start shadow bg-white hover:shadow-xl hover:scale-y-105 transition-all duration-300 cursor-pointer py-3 px-5">
           <MdOutlineCheckCircle className="text-purple-600 " size={50} />
           <h3 className="text-2xl font-bold my-4">Plot Covering</h3>
           <p className="text-gray-600 mt-2 w-[90%]">
@@ -56,7 +56,7 @@ const DeliveryServices = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:items-start">
+        <div className="flex flex-col lg:items-start shadow bg-white hover:shadow-xl hover:scale-y-105 transition-all duration-300 cursor-pointer py-3 px-5">
           <MdOutlineRocketLaunch className="text-purple-600 " size={50} />
           <h3 className="text-2xl font-bold my-4">Escorting Service</h3>
           <p className="text-gray-600 mt-2 w-[90%]">
@@ -66,7 +66,7 @@ const DeliveryServices = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:items-start">
+        <div className="flex flex-col lg:items-start shadow bg-white hover:shadow-xl hover:scale-y-105 transition-all duration-300 cursor-pointer py-3 px-5">
           <MdOutlineInventory className="text-purple-600 " size={50} />
           <h3 className="text-2xl font-bold my-4">
             Excess Load Adjustment Services

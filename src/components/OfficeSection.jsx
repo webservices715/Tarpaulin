@@ -9,117 +9,107 @@ const OfficeSection = () => {
   };
 
   return (
-    <section className="office-section bg-white p-8 rounded-lg  mx-auto my-16 max-w-7xl">
-      <h2 className="section-title text-5xl font-bold text-gray-800 border-b-4 border-gray-200 pb-4 mb-8 ">
-        Head Office
-      </h2>
+    <section className="bg-gray-50">
+      <div className="p-8 mx-auto my-16 max-w-6xl">
+        <h2 className="section-title text-4xl font-bold text-gray-800 border-b-4 border-gray-200 pb-4 mb-8 text-center">
+          Office Locations
+        </h2>
 
-      <div className="office-box flex flex-row-reverse max-w-4xl justify-between p-6 bg-white rounded-lg shadow-lg border-b-4 border-purple-700 border-l-4 mb-6 transition-transform duration-200 hover:transform hover:translate-y-[-5px] hover:shadow-md">
-        <div className="office-image">
-          <img
-            src="https://content3.jdmagicbox.com/v2/comp/delhi/40/011p61240/catalogue/dlf-ltd-corporate-office-connaught-place-delhi-builders-1d39dep.jpg"
-            alt="DLF Head Office Image"
-            className="w-[94%] h-[260px] object-cover rounded-md shadow-md"
-          />
-        </div>
-        <div className="office-details p-5">
-          <h3 className="text-3xl text-gray-800 mb-2">Head Office</h3>
-          <p className="office-location text-xl text-purple-900 font-semibold flex items-center gap-2 mb-3">
-            <MdLocationPin size={40} /> Kolkata
-          </p>
-          <p className="office-address text-lg text-gray-600 leading-relaxed mb-4">
-            5, Clive Row (Dr. Rajendra Prasad Sarani), Room No. 8JA, 8th Floor,
-            Kolkata-700001, WB, India.
-          </p>
-        </div>
-      </div>
-
-      <div className="office-city">
-        <h3 className="text-2xl font-bold text-gray-800 text-center my-10 py-4 border-b-4 border-gray-200">
-          Our Offices Located At
-        </h3>
-        <div className="city-box grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {/* City details - always visible */}
-          <div className="city-details bg-white p-4 rounded-lg shadow-lg border-b-4 border-purple-700 mb-4 transition-transform duration-200 hover:scale-105">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2 px-3">
-              Noida
-            </h4>
-            <p className="city-address text-gray-600 text-base flex items-center gap-3 px-3">
-              <MdLocationPin size={20} /> Uttar Pradesh, India
-            </p>
-          </div>
-
-          <div className="city-details bg-white p-4 rounded-lg shadow-lg border-b-4 border-purple-700 mb-4 transition-transform duration-200 hover:scale-105">
-            <h4 className="text-lg font-semibold text-gray-800 mb-2 px-3">
-              Chennai
-            </h4>
-            <p className="city-address text-gray-600 text-base flex items-center gap-3 px-3">
-              <MdLocationPin size={20} /> Tamil Nadu, India
-            </p>
-          </div>
-
-          {/* More Cities - Initially hidden */}
-          {showMoreCities && (
-            <>
-              {[
-                { name: "Kolkata", state: "West Bengal", country: "India" },
-                { name: "Haldia", state: "West Bengal", country: "India" },
-                { name: "Raniganj", state: "West Bengal", country: "India" },
-                { name: "Durgapur", state: "West Bengal", country: "India" },
-                { name: "Dhanbad", state: "Jharkhand", country: "India" },
-                {
-                  name: "Visakhapatnam",
-                  state: "Andhra Pradesh",
-                  country: "India",
-                },
-                {
-                  name: "Gangavaram",
-                  state: "Andhra Pradesh",
-                  country: "India",
-                },
-                { name: "Kakinada", state: "Andhra Pradesh", country: "India" },
-                { name: "Paradeep", state: "Odisha", country: "India" },
-                { name: "Jajpur", state: "Odisha", country: "India" },
-                { name: "Barbil", state: "Odisha", country: "India" },
-                { name: "Sambalpur", state: "Odisha", country: "India" },
-                { name: "Jharsugda", state: "Odisha", country: "India" },
-                { name: "Gandhidham", state: "Gujarat", country: "India" },
-                { name: "Raipur", state: "Chhattisgarh", country: "India" },
-                { name: "Raigarh", state: "Chhattisgarh", country: "India" },
-                { name: "Korba", state: "Chhattisgarh", country: "India" },
-                { name: "Bhatapara", state: "Chhattisgarh", country: "India" },
-                { name: "Katni", state: "Madhya Pradesh", country: "India" },
-                { name: "Satna", state: "Madhya Pradesh", country: "India" },
-                {
-                  name: "Singrauli",
-                  state: "Madhya Pradesh",
-                  country: "India",
-                },
-              ].map((city, index) => (
-                <div
-                  key={index}
-                  className="city-details bg-white p-4 rounded-lg shadow-lg border-b-4 border-purple-700 mb-4 transition-transform duration-200 hover:scale-105"
-                >
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2 px-3">
-                    {city.name}
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Left Section: Office List */}
+          <div className="flex-1">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">
+              Our Offices
+            </h3>
+            <div className="office-list space-y-4">
+              <div className="office-item flex items-start gap-4 bg-white p-4 rounded-lg shadow-lg transition-transform duration-200 hover:scale-105">
+                <MdLocationPin size={30} className="text-purple-700 mt-1" />
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-800">
+                    Head Office - Kolkata
                   </h4>
-                  <p className="city-address text-gray-600 text-base flex items-center gap-3 px-3">
-                    <MdLocationPin size={20} /> {city.state}, {city.country}
+                  <p className="text-gray-600">
+                    5, Clive Row (Dr. Rajendra Prasad Sarani), Room No. 8JA, 8th
+                    Floor, Kolkata-700001, WB, India.
                   </p>
                 </div>
-              ))}
-            </>
-          )}
-        </div>
+              </div>
 
-        {/* Toggle Link */}
-        <div className="text-center mt-6">
-          <button
-            onClick={toggleCities}
-            className="more-link text-lg font-bold text-purple-700 hover:text-purple-600 focus:outline-none"
-          >
-            {showMoreCities ? "Show Less Offices" : "More Offices"}
-          </button>
+              {/* Always visible offices */}
+              <div className="office-item flex items-start gap-4 bg-white p-4 rounded-lg shadow-lg transition-transform duration-200 hover:scale-105">
+                <MdLocationPin size={30} className="text-purple-700 mt-1" />
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-800">Noida</h4>
+                  <p className="text-gray-600">Uttar Pradesh, India</p>
+                </div>
+              </div>
+              <div className="office-item flex items-start gap-4 bg-white p-4 rounded-lg shadow-lg transition-transform duration-200 hover:scale-105">
+                <MdLocationPin size={30} className="text-purple-700 mt-1" />
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-800">
+                    Chennai
+                  </h4>
+                  <p className="text-gray-600">Tamil Nadu, India</p>
+                </div>
+              </div>
+
+              {/* More Cities - Initially hidden */}
+              {showMoreCities &&
+                [
+                  { name: "Haldia", state: "West Bengal", country: "India" },
+                  { name: "Raniganj", state: "West Bengal", country: "India" },
+                  { name: "Durgapur", state: "West Bengal", country: "India" },
+                  { name: "Dhanbad", state: "Jharkhand", country: "India" },
+                  {
+                    name: "Visakhapatnam",
+                    state: "Andhra Pradesh",
+                    country: "India",
+                  },
+                ].map((city, index) => (
+                  <div
+                    key={index}
+                    className="office-item flex items-start gap-4 bg-white p-4 rounded-lg shadow-lg transition-transform duration-200 hover:scale-105"
+                  >
+                    <MdLocationPin size={30} className="text-purple-700 mt-1" />
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-800">
+                        {city.name}
+                      </h4>
+                      <p className="text-gray-600">
+                        {city.state}, {city.country}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+            </div>
+
+            {/* Toggle Button */}
+            <div className="text-center mt-6">
+              <button
+                onClick={toggleCities}
+                className="text-lg font-bold text-purple-700 hover:text-purple-600 focus:outline-none"
+              >
+                {showMoreCities ? "Show Less Offices" : "More Offices"}
+              </button>
+            </div>
+          </div>
+
+          {/* Right Section: Map */}
+          <div className="flex-1">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Our Map</h3>
+            <div className="w-full h-96 bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+              <iframe
+                title="Kolkata Office Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.1951074012363!2d88.34824367591402!3d22.57358403073808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027713748edb69%3A0x2ec17ed278e221cc!2s5%2C%20Clive%20Row%2C%20Dalhousie%20BBD%20Bag%20East%2C%20B.B.D.%20Bagh%2C%20Kolkata%2C%20West%20Bengal%20700001%2C%20India!5e0!3m2!1sen!2sin!4v1697185477957!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>

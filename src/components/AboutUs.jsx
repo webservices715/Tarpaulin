@@ -3,7 +3,7 @@ import aboutUsImg from "../assets/aboutUs.jpg";
 
 const AboutUs = () => {
   return (
-    <section className=" py-12 h-auto relative -z-50">
+    <section className="py-12 h-auto relative -z-50">
       {/* For LG Screens */}
       <div className="hidden lg:block absolute top-[50%] left-[15%]">
         <div className="container flex z-50">
