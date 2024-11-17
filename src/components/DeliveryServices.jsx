@@ -1,22 +1,31 @@
 import React from "react";
-import { MdOutlineAssignment, MdOutlineCheckCircle, MdOutlineRocketLaunch, MdOutlineInventory } from "react-icons/md";
+import {
+  MdOutlineAssignment,
+  MdOutlineCheckCircle,
+  MdOutlineRocketLaunch,
+  MdOutlineInventory,
+} from "react-icons/md";
 
 const DeliveryServices = () => {
   return (
-    <section className="flex flex-col lg:flex-row justify-center min-h-screen px-6 lg:px-20 py-12 bg-white">
+    <section className="flex flex-col lg:flex-row justify-center min-h-screen px-4 lg:px-20 py-40 bg-white">
       {/* Left Side */}
       <div className="max-w-lg text-left">
-        <h1 className="text-3xl lg: font-bold text-[#6345fe]  lg:text-left">
-          Boxe Best
+        <h1 className="text-3xl lg:font-bold lg:text-5xl text-[#6345fe]  lg:text-left">
+          What We Do
         </h1>
-        <h2 className="text-2xl lg:text-3xl text-[#6345fe] mt-2  lg:text-left">
+        {/* <h2 className="text-2xl lg:text-5xl text-[#6345fe] mt-2  lg:text-left">
           Delivery Services
-        </h2>
-        <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis is ipsum Lorem.
+        </h2> */}
+        <p className="text-gray-600 mt-4 leading-loose text-sm sm:text-base">
+          Universe Inspection Services Pvt. Ltd. (UISPL) developed a strong,
+          dedicated team to offer few special services in the sector of Rake /
+          Plot covering and Escorting services for the transportation of Coal
+          and all other mineral products.
         </p>
         <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
-          Psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate dolor in reprehenderit.
+          From the last two decades we are successfully offering the folowing
+          services:
         </p>
         <div className="flex lg:justify-start">
           <button className="mt-6 bg-purple-100 text-purple-600 font-medium px-6 py-3 rounded shadow hover:bg-purple-200">
@@ -26,36 +35,45 @@ const DeliveryServices = () => {
       </div>
 
       {/* Right Side */}
-      <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 w-full lg:w-[40%] gap-8 mt-12 lg:mt-0 lg:ml-16  lg:text-left">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-full lg:w-[40%] gap-12 mt-12 lg:mt-0 lg:ml-16  lg:text-left">
         <div className="flex flex-col lg:items-start">
-          <MdOutlineAssignment className="text-purple-600 " size={50}/>
-          <h3 className="text-lg font-semibold mt-4">Planning</h3>
+          <MdOutlineAssignment className="text-purple-600 " size={50} />
+          <h3 className="text-2xl font-bold my-4">Tarpaulin Covering</h3>
           <p className="text-gray-600 mt-2 w-[90%]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.
+            We cover entire rake with Tarpaulins (with different quality & size
+            as per customer requirement) for safety of material from pilferage
+            as well as rain.
           </p>
         </div>
 
         <div className="flex flex-col lg:items-start">
-          <MdOutlineCheckCircle className="text-purple-600 "  size={50}/>
-          <h3 className="text-lg font-semibold mt-4">List Delivery</h3>
+          <MdOutlineCheckCircle className="text-purple-600 " size={50} />
+          <h3 className="text-2xl font-bold my-4">Plot Covering</h3>
           <p className="text-gray-600 mt-2 w-[90%]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.
+            We cover entire plot where cargo is stocked with Tarpaulins (with
+            100% waterproof tarpaulin as per stock quantity & size) for safety
+            of material from pilferage as well as rain.
           </p>
         </div>
 
         <div className="flex flex-col lg:items-start">
-          <MdOutlineRocketLaunch className="text-purple-600 "  size={50}/>
-          <h3 className="text-lg font-semibold mt-4">Transport</h3>
+          <MdOutlineRocketLaunch className="text-purple-600 " size={50} />
+          <h3 className="text-2xl font-bold my-4">Escorting Service</h3>
           <p className="text-gray-600 mt-2 w-[90%]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.
+            We offer trained escorts for safe transit at nominal costs,
+            providing updates on the location via SMS to help you coordinate
+            efficiently.
           </p>
         </div>
 
         <div className="flex flex-col lg:items-start">
-          <MdOutlineInventory className="text-purple-600 "  size={50}/>
-          <h3 className="text-lg font-semibold mt-4">Inventory</h3>
+          <MdOutlineInventory className="text-purple-600 " size={50} />
+          <h3 className="text-2xl font-bold my-4">
+            Excess Load Adjustment Services
+          </h3>
           <p className="text-gray-600 mt-2 w-[90%]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.
+            We arrange adjustment of loaded material from the wagon in case of
+            excess load according to Railway’s norm.
           </p>
         </div>
       </div>
