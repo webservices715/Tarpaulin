@@ -1,12 +1,13 @@
 import AboutUs from "../components/Aboutus";
+import DeliveryServices from "../components/DeliveryServices";
 import HeroSection from "../components/HeroSection";
-import Navbar from "../components/Navbar";
 
 const HomePage = () => {
     return (
         <div>
             <HeroSection />
             <AboutUs/>
+            <DeliveryServices/>
         </div>
     )   
 };
