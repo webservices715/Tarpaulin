@@ -1,4 +1,4 @@
-import AboutUs from "../components/Aboutus";
+import AboutUs from "../components/AboutUs";
 import DeliveryServices from "../components/DeliveryServices";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";

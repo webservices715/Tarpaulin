@@ -1,7 +1,6 @@
 import React from "react";
-import aboutUsImg from "../assets/aboutUs.jpg";
 
-const AboutUs = () => {
+function AboutUs() {
   return (
     <section className="py-12 h-auto relative -z-50">
       {/* For LG Screens */}
@@ -45,7 +44,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-
       {/* For SM and MD Screens */}
       <div className=" lg:hidden flex flex-col  px-4">
         {/* "About Us" Text */}
@@ -85,6 +83,6 @@ const AboutUs = () => {
       </div>
     </section>
   );
-};
+}
 
 export default AboutUs;
