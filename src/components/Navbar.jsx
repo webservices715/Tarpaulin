@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,43 +26,45 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-around py-4 px-6">
         {/* Logo */}
         <div className="flex items-center">
-          <span className="text-purple-500 font-bold text-xl">Boxe</span>
+          <Link to="/" className="text-purple-500 font-bold text-xl">
+            Boxe
+          </Link>
         </div>
 
         {/* Navigation Links */}
         <ul className="hidden md:flex space-x-8">
           <li>
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-orange-500 hover:text-orange-600 font-semibold"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-orange-600">
+            <Link to="/about" className="hover:text-orange-600">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-orange-600">
+            <Link to="/services" className="hover:text-orange-600">
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-orange-600">
+            <Link to="/delivery" className="hover:text-orange-600">
               Delivery
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-orange-600">
+            <Link to="/blog" className="hover:text-orange-600">
               Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-orange-600">
+            <Link to="/contact" className="hover:text-orange-600">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
