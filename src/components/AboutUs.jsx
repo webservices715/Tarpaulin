@@ -1,5 +1,5 @@
 import React from "react";
-
+import aboutUsImg from "../assets/aboutus.jpg";
 function AboutUs() {
   return (
     <section className="py-12 h-auto relative -z-50">
