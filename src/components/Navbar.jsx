@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -125,7 +126,10 @@ const Navbar = () => {
 
         {/* Search Icon */}
         <div className="hidden md:block">
-          <button className="text-white hover:text-orange-600">
+          <button
+            className="text-white hover:text-orange-600"
+            onClick={() => setIsSearchOpen(!isSearchOpen)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -143,6 +147,16 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      {isSearchOpen && (
+  <div className="absolute h-[3rem] top-12 left-0 right-0 mx-auto w-[calc(100%-15rem)] bg-[#6345FE] rounded-md shadow-lg transition-all duration-1000 ease-in-out">
+    <input
+      type="text"
+      className="w-full rounded-md bg-[#6345FE] focus:outline-none px-4 py-2 transition-all duration-800 ease-in-out"
+      placeholder="Search..."
+    />
+  </div>
+)}
+
     </nav>
   );
 };
