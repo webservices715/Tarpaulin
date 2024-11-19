@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,10 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
 
   return (
     <nav
@@ -32,7 +37,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <ul className="hidden md:flex space-x-8">
+        <ul className="hidden md:flex space-x-8 relative">
           <li>
             <Link
               to="/"
@@ -56,10 +61,60 @@ const Navbar = () => {
               Delivery
             </Link>
           </li>
-          <li>
-            <Link to="/blog" className="hover:text-orange-600">
+          {/* Blog with Dropdown */}
+          <li className="relative">
+            <button
+              onClick={toggleDropdown}
+              className="hover:text-orange-600 flex items-center"
+            >
               Blog
-            </Link>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-3 w-3 ml-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <ul
+              className={`absolute left-0 top-10 bg-[#6345FE] text-white shadow-md rounded-md py-2 w-[7rem] transform transition-all duration-200 ${
+                isDropdownOpen
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-95 pointer-events-none"
+              }`}
+            >
+              <li>
+                <Link
+                  to="/blog/category1"
+                  className="block px-4 py-2 hover:bg-orange-500 hover:text-white text-sm"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog/category2"
+                  className="block px-4 py-2 hover:bg-orange-500 hover:text-white text-sm"
+                >
+                  Single Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog/category3"
+                  className="block px-4 py-2 hover:bg-orange-500 hover:text-white text-sm"
+                >
+                  Elements
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
             <Link to="/contact" className="hover:text-orange-600">
