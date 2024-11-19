@@ -1,6 +1,6 @@
 import React from "react";
 
-const Breadcrumb = () => {
+const Breadcrumb = ({title,image}) => {
   return (
     <div className="relative w-full h-[35rem]">
     {/* Background Image */}
@@ -17,7 +17,7 @@ const Breadcrumb = () => {
     {/* Text Content */}
     <div className="relative z-10 flex items-center justify-center h-full">
       <h1 className="text-6xl md:text-8xl font-bold text-orange-500">
-        About
+        {title}
       </h1>
     </div>
   </div>

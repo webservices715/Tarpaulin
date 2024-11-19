@@ -9,7 +9,7 @@ import TestimonialSection from "../components/TestimonialSection";
 function AboutUs() {
   return (
     <div>
-      <Breadcrumb />
+      <Breadcrumb title="About Us" />
       <AboutComp />
       <div className="lg:mt-[52rem]">
         <TeamSection />
