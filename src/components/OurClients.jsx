@@ -43,7 +43,7 @@ const OurClients = () => {
   const extendedClients = [...clients, ...clients];
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto overflow-hidden">
+    <div className="relative w-full max-w-5xl py-14 mx-auto overflow-hidden">
       {/* Heading */}
       <h2 className="pt-4 text-center text-3xl font-bold text-[#6345fe] mb-6">Our Clients</h2>
 
@@ -53,7 +53,7 @@ const OurClients = () => {
           {extendedClients.map((client, index) => (
             <div
               key={index}
-              className="flex-none w-60 px-4 py-8 bg-white shadow-md rounded-lg"
+              className="flex-none w-80 px-4 py-8 bg-white rounded-lg"
             >
               <div className="text-center">
                 <img
