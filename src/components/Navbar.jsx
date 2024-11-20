@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa"; // Importing react icons for toggle
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,22 +25,26 @@ const Navbar = () => {
     setIsDropdownOpen((prev) => !prev);
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev); // Toggle mobile menu
+  };
+
   return (
     <nav
       className={`text-white fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
         isScrolled ? "bg-[#f6a515]" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-around py-4 px-6">
+      <div className="container mx-auto flex items-center justify-between py-6 px-6">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center ">
           <Link to="/" className="text-purple-500 font-bold text-xl">
             Boxe
           </Link>
         </div>
 
-        {/* Navigation Links */}
-        <ul className="hidden md:flex space-x-8 relative">
+        {/* Menu for desktop */}
+        <ul className="hidden md:flex space-x-12 relative">
           <li>
             <Link
               to="/"
@@ -147,6 +153,57 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu Toggle Button */}
+      <div className="md:hidden absolute top-6 right-6">
+        <button
+          onClick={toggleMenu}
+          className="text-white hover:text-purple-600 font-bold"
+        >
+          {isMenuOpen ? (
+            <FaTimes className="h-6 w-6" />
+          ) : (
+            <FaBars className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-[#6345FE] text-white shadow-lg transition-all duration-300 ease-in-out">
+          <ul className="space-y-4 py-4 px-6">
+            <li>
+              <Link
+                to="/"
+                className="block text-purple-500 hover:text-purple-600 font-bold"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-purple-600 font-bold">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/service" className="hover:text-purple-600 font-bold">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" className="hover:text-purple-600 font-bold">
+                Photo Gallery
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-purple-600 font-bold">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
+
       {isSearchOpen && (
         <div className="absolute h-[3rem] top-16 left-0 right-0 mx-auto w-[calc(100%-15rem)] bg-[#6345FE] shadow-lg transition-all duration-1000 ease-in-out">
           <input
