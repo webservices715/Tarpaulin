@@ -42,31 +42,31 @@ const Navbar = () => {
           <li>
             <Link
               to="/"
-              className="text-orange-500 hover:text-orange-600 font-semibold"
+              className="text-purple-500 hover:text-purple-600 font-bold"
             >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-orange-600">
+            <Link to="/about" className="hover:text-purple-600 font-bold">
               About
             </Link>
           </li>
           <li>
-            <Link to="/service" className="hover:text-orange-600">
+            <Link to="/service" className="hover:text-purple-600 font-bold">
               Services
             </Link>
           </li>
           <li>
-            <Link to="/delivery" className="hover:text-orange-600">
-              Delivery
+            <Link to="/gallery" className="hover:text-purple-600 font-bold">
+              Photo Gallery
             </Link>
           </li>
           {/* Blog with Dropdown */}
           <li className="relative">
             <button
               onClick={toggleDropdown}
-              className="hover:text-orange-600 flex items-center"
+              className="hover:text-purple-600 font-bold flex items-center"
             >
               Blog
               <svg
@@ -94,7 +94,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/blog/category1"
-                  className="block px-4 py-2 hover:bg-orange-500 hover:text-white text-sm"
+                  className="block px-4 py-2 hover:bg-purple-500 hover:text-white text-sm"
                 >
                   Blog
                 </Link>
@@ -102,7 +102,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/blog/category2"
-                  className="block px-4 py-2 hover:bg-orange-500 hover:text-white text-sm"
+                  className="block px-4 py-2 hover:bg-purple-500 hover:text-white text-sm"
                 >
                   Single Blog
                 </Link>
@@ -110,7 +110,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/blog/category3"
-                  className="block px-4 py-2 hover:bg-orange-500 hover:text-white text-sm"
+                  className="block px-4 py-2 hover:bg-purple-500 hover:text-white text-sm"
                 >
                   Elements
                 </Link>
@@ -118,7 +118,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-orange-600">
+            <Link to="/contact" className="hover:text-purple-600 font-bold">
               Contact
             </Link>
           </li>
@@ -127,7 +127,7 @@ const Navbar = () => {
         {/* Search Icon */}
         <div className="hidden md:block">
           <button
-            className="text-white hover:text-orange-600"
+            className="text-white hover:text-purple-600 font-bold"
             onClick={() => setIsSearchOpen(!isSearchOpen)}
           >
             <svg
@@ -148,15 +148,14 @@ const Navbar = () => {
         </div>
       </div>
       {isSearchOpen && (
-  <div className="absolute h-[3rem] top-12 left-0 right-0 mx-auto w-[calc(100%-15rem)] bg-[#6345FE] rounded-md shadow-lg transition-all duration-1000 ease-in-out">
-    <input
-      type="text"
-      className="w-full rounded-md bg-[#6345FE] focus:outline-none px-4 py-2 transition-all duration-800 ease-in-out"
-      placeholder="Search..."
-    />
-  </div>
-)}
-
+        <div className="absolute h-[3rem] top-16 left-0 right-0 mx-auto w-[calc(100%-15rem)] bg-[#6345FE] shadow-lg transition-all duration-1000 ease-in-out">
+          <input
+            type="text"
+            className="w-full rounded-md bg-[#6345FE] focus:outline-none px-4 text-white placeholder-white py-2 transition-all duration-800 ease-in-out"
+            placeholder="Search..."
+          />
+        </div>
+      )}
     </nav>
   );
 };
