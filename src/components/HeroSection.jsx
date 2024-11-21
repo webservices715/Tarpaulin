@@ -7,7 +7,7 @@ const HeroSection = () => {
     <>
       <Navbar />
       <div
-        className="relative h-screen bg-cover bg-center bg-no-repeat"
+        className="relative h-screen bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{ backgroundImage: `url(${herosectionimage})` }}
       >
         {/* Overlay */}
@@ -42,7 +42,7 @@ const HeroSection = () => {
               <input
                 type="tel"
                 placeholder="Phone Number"
-                className="h-16 lg:h-16 px-3 md:px-4 flex-grow text-sm md:text-base lg:text-lg text-black border-none outline-none"
+                className="h-16 lg:h-16 px-2 md:px-4 flex-grow text-sm md:text-base lg:text-lg text-black border-none outline-none"
               />
               <button className="h-16 lg:h-16 bg-yellow-500 px-5 md:px-5 lg:px-6 text-white hover:bg-yellow-600">
                 <FiArrowRight size={22} />

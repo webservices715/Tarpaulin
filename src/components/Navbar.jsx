@@ -36,11 +36,11 @@ const Navbar = () => {
         isScrolled ? "bg-[#f6a515]" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-6 px-6">
+      <div className="container mx-auto flex items-center justify-between py-2 px-6">
         {/* Logo */}
         <div className="flex items-center ">
           <Link to="/" className="text-purple-500 font-bold text-xl">
-            <img src={logo} alt="Logo" className="w-16"  />
+            <img src={logo} alt="Logo" className="w-20"  />
           </Link>
         </div>
 
