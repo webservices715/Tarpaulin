@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa"; // Importing react icons for toggle
+import { FaBars, FaTimes } from "react-icons/fa"; 
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,7 +40,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center ">
           <Link to="/" className="text-purple-500 font-bold text-xl">
-            Boxe
+            <img src={logo} alt="Logo" className="w-16"  />
           </Link>
         </div>
 
