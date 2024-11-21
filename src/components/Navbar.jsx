@@ -65,8 +65,9 @@ const Navbar = () => {
               Photo Gallery
             </Link>
           </li>
+
           {/* Blog with Dropdown */}
-          <li className="relative">
+          {/* <li className="relative">
             <button
               onClick={toggleDropdown}
               className="hover:text-purple-600 font-bold flex items-center"
@@ -119,7 +120,8 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-          </li>
+          </li> */}
+
           <li>
             <Link to="/contact" className="hover:text-purple-600 font-bold">
               Contact
