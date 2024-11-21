@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa"; 
-import {logo} from "../asset/Logo.png";
+import logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
