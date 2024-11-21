@@ -7,15 +7,11 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,7 +23,7 @@ const Navbar = () => {
   };
 
   const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev); // Toggle mobile menu
+    setIsMenuOpen((prev) => !prev);
   };
 
   return (
@@ -38,9 +34,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-2 px-6">
         {/* Logo */}
-        <div className="flex items-center ">
+        <div className="flex items-center">
           <Link to="/" className="text-purple-500 font-bold text-xl">
-            <img src={logo} alt="Logo" className="w-20"  />
+            <img src={logo} alt="Logo" className="w-20" />
           </Link>
         </div>
 
@@ -49,7 +45,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/"
-              className="text-purple-500 hover:text-purple-600 font-bold"
+              className="text-white hover:text-purple-600 font-bold"
             >
               Home
             </Link>
@@ -171,39 +167,61 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-[#6345FE] text-white shadow-lg transition-all duration-300 ease-in-out">
-          <ul className="space-y-4 py-4 px-6">
-            <li>
-              <Link
-                to="/"
-                className="block text-purple-500 hover:text-purple-600 font-bold"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="hover:text-purple-600 font-bold">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/service" className="hover:text-purple-600 font-bold">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/gallery" className="hover:text-purple-600 font-bold">
-                Photo Gallery
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="hover:text-purple-600 font-bold">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
+  <div
+    className={`md:hidden absolute h-80 top-18 left-0 right-0 bg-[#6345FE] text-white shadow-lg transition-all duration-500 ease-in-out  ${
+      isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+    }`}
+  >
+    <ul className="space-y-4 py-4 px-6">
+      <li>
+        <Link
+          to="/"
+          className="block text-purple-500 hover:text-purple-600 font-bold"
+          onClick={toggleMenu}
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/about"
+          className="hover:text-purple-600 font-bold"
+          onClick={toggleMenu}
+        >
+          About
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/service"
+          className="hover:text-purple-600 font-bold"
+          onClick={toggleMenu}
+        >
+          Services
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/gallery"
+          className="hover:text-purple-600 font-bold"
+          onClick={toggleMenu}
+        >
+          Photo Gallery
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/contact"
+          className="hover:text-purple-600 font-bold"
+          onClick={toggleMenu}
+        >
+          Contact
+        </Link>
+      </li>
+    </ul>
+  </div>
+)}
+
 
       {isSearchOpen && (
         <div className="absolute h-[3rem] top-16 left-0 right-0 mx-auto w-[calc(100%-15rem)] bg-[#6345FE] shadow-lg transition-all duration-1000 ease-in-out">
