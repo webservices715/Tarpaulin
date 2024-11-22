@@ -21,7 +21,7 @@ function ContactForm() {
             marginHeight="0"
             marginWidth="0"
             scrolling="no"
-            src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16250.27337462716!2d81.95497727581298!3d21.738619578726727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28615c54b848dd%3A0x8d577f28004e851e!2sBhatapara%2C%20Chhattisgarh%20493118!5e0!3m2!1sen!2sin!4v1732296684322!5m2!1sen!2sin"
             style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
           ></iframe>
 
@@ -31,8 +31,9 @@ function ContactForm() {
                 Head Office
               </h2>
               <p className="mt-1">
-                Photo booth tattooed prism, portland taiyaki hoodie neutra
-                typewriter
+                SATYAKARTA SERVICES INDIA PRIVATE LIMITED C/o Vikash Kumar
+                Pancholi, R- II Semariyaghat, Bhatapara, Bhatapara, Raipur-
+                493118, Chattisgarh
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -40,19 +41,18 @@ function ContactForm() {
                 EMAIL
               </h2>
               <a className="text-purple-500 leading-relaxed">
-                example@email.com
+              satyakarta.sipl@gmail.com
               </a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">123-456-7890</p>
+              <p className="leading-relaxed">+91-9883254376, 9875563641</p>
             </div>
           </div>
-
         </div>
         <div className="lg:w-[40%] md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-          Contact Us
+            Contact Us
           </h2>
           <p className="leading-relaxed mb-5 text-gray-600">
             Post-ironic portland shabby chic echo park, banjo fashion axe
@@ -107,7 +107,6 @@ function ContactForm() {
             Button
           </button>
 
-
           <div className="flex-1 py-12">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">
               Our Offices
@@ -147,12 +146,11 @@ function ContactForm() {
                 <MdLocationPin size={30} className="text-purple-700 mt-1" />
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800">
-                  Haldia
+                    Haldia
                   </h4>
                   <p className="text-gray-600">West Bengal, India</p>
                 </div>
               </div>
-
 
               {/* More Cities - Initially hidden */}
               {showMoreCities &&
@@ -193,7 +191,6 @@ function ContactForm() {
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </section>
