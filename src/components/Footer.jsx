@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosSend } from "react-icons/io";
-
+import logo from "../assets/Logo.png";
 const Footer = () => {
   return (
     <footer className="footer-area bg-gray-900 text-white">
@@ -10,14 +10,11 @@ const Footer = () => {
           <div className="space-y-4">
             <a href="index.html">
               <img
-                src="https://preview.colorlib.com/theme/boxe/img/footer-logo.png"
+                src={logo}
                 alt="Footer Logo"
                 className="w-24 sm:w-32"
               />
             </a>
-            <p className="text-sm sm:text-base leading-relaxed">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip consequat. Uis aute irure dolor.
-            </p>
             <div className="working_hours space-y-1">
               <p className="font-bold text-sm sm:text-base">Working Hours:</p>
               <p className="text-sm sm:text-base">
@@ -78,31 +75,6 @@ const Footer = () => {
                 />
               ))}
             </div>
-          </div>
-
-          {/* Footer Newsletter */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">Newsletter</h4>
-            <p className="text-sm sm:text-base mb-4">
-              For business professionals caught between high OEM price and mediocre print and graphic output.
-            </p>
-            <form
-              target="_blank"
-              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-              method="get"
-              className="flex  sm:flex-row items-center gap-2"
-            >
-              <input
-                type="email"
-                name="EMAIL"
-                placeholder="Your Email Address"
-                className="flex-1 p-2 bg-transparent outline-none border border-white text-white placeholder-white text-sm sm:text-base"
-                required
-              />
-              <button type="submit" className="p-2 bg-[#6345fe] text-white hover:bg-[#6345f3]">
-                <IoIosSend size={26} />
-              </button>
-            </form>
           </div>
         </div>
 
