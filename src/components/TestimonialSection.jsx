@@ -97,9 +97,9 @@ function TestimonialSection() {
                 </p>
 
                 <p className="mt-4 leading-relaxed text-gray-700">
-                  "UISPL's dedication to excellence has completely transformed
+                  Satyakarta dedication to excellence has completely transformed
                   our business operations. Their team of experts helped
-                  streamline our processes with innovative software solutions,
+                  streamline our processes,
                   making everything more efficient and cost-effective. Highly
                   recommended!"
                 </p>
@@ -166,7 +166,7 @@ function TestimonialSection() {
                 </p>
 
                 <p className="mt-4 leading-relaxed text-gray-700">
-                  Working with UISPL was a game-changer. Their tailored digital
+                  Working with Satyakarta was a game-changer. Their tailored digital
                   solutions helped us enhance our online presence and engage
                   with our customers better. Their support and guidance were
                   top-notch throughout the entire process.
@@ -234,7 +234,7 @@ function TestimonialSection() {
                 </p>
 
                 <p className="mt-4 leading-relaxed text-gray-700">
-                  UISPL's approach is truly customer-centric. They not only
+                  Satyakarta approach is truly customer-centric. They not only
                   understood our business needs but also delivered solutions
                   that were innovative and scalable. Their commitment to quality
                   and timely delivery is unmatched.
