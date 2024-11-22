@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosSend } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/Logo.png";
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Footer Logo and Info */}
           <div className="space-y-4">
-            <a href="index.html">
+            <a to="index.html">
               <img
                 src={logo}
                 alt="Footer Logo"
@@ -31,24 +32,24 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Category</h4>
             <ul className="space-y-2 text-sm sm:text-base">
               <li>
-                <a href="#" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
+                <NavLink to="/about" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
+                <NavLink to="/service" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
                   Services
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
+                <NavLink to="/gallery" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
                   Gallery
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
+                <NavLink to="/contact" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
                   Contact Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -85,7 +86,7 @@ const Footer = () => {
               Copyright &copy; {new Date().getFullYear()} All rights reserved | This template is made with{" "}
               <i className="fa fa-heart text-red-500"></i> by{" "}
               <a
-                href="#"
+                to="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#6345f3] transition-all ease-in-out duration-300"

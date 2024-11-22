@@ -5,6 +5,7 @@ import {
   MdOutlineRocketLaunch,
   MdOutlineInventory,
 } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 const DeliveryServices = () => {
   return (
@@ -18,10 +19,9 @@ const DeliveryServices = () => {
           Delivery Services
         </h2> */}
         <p className="text-gray-600 mt-4 leading-loose text-sm sm:text-base">
-          Satyakarta developed a strong,
-          dedicated team to offer few special services in the sector of Rake /
-          Plot covering and Escorting services for the transportation of Coal
-          and all other mineral products.
+          Satyakarta developed a strong, dedicated team to offer few special
+          services in the sector of Rake / Plot covering and Escorting services
+          for the transportation of Coal and all other mineral products.
         </p>
         <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
           From the last two decades we are successfully offering the folowing
@@ -29,7 +29,7 @@ const DeliveryServices = () => {
         </p>
         <div className="flex lg:justify-start">
           <button className="mt-6 bg-purple-100 text-purple-600 font-medium px-6 py-3 rounded shadow hover:bg-purple-200">
-            LEARN MORE
+            <NavLink to={"/service"}>LEARN MORE</NavLink>
           </button>
         </div>
       </div>

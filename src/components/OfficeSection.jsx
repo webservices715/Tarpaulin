@@ -26,11 +26,12 @@ const OfficeSection = () => {
                 <MdLocationPin size={30} className="text-purple-700 mt-1" />
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800">
-                    Head Office - Kolkata
+                    Head Office -  Chattisgarh
                   </h4>
                   <p className="text-gray-600">
-                    5, Clive Row (Dr. Rajendra Prasad Sarani), Room No. 8JA, 8th
-                    Floor, Kolkata-700001, WB, India.
+                  SATYAKARTA SERVICES INDIA PRIVATE LIMITED C/o Vikash Kumar
+                Pancholi, R- II Semariyaghat, Bhatapara, Bhatapara, Raipur-
+                493118, Chattisgarh
                   </p>
                 </div>
               </div>
@@ -100,7 +101,7 @@ const OfficeSection = () => {
             <div className="w-full h-96 bg-gray-200 rounded-lg shadow-lg overflow-hidden">
               <iframe
                 title="Kolkata Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.1951074012363!2d88.34824367591402!3d22.57358403073808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027713748edb69%3A0x2ec17ed278e221cc!2s5%2C%20Clive%20Row%2C%20Dalhousie%20BBD%20Bag%20East%2C%20B.B.D.%20Bagh%2C%20Kolkata%2C%20West%20Bengal%20700001%2C%20India!5e0!3m2!1sen!2sin!4v1697185477957!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16250.27337462716!2d81.95497727581298!3d21.738619578726727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28615c54b848dd%3A0x8d577f28004e851e!2sBhatapara%2C%20Chhattisgarh%20493118!5e0!3m2!1sen!2sin!4v1732296684322!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

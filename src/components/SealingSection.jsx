@@ -3,9 +3,11 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const SealingSection = () => {
   const sliderImages = [
+    "https://uispl.in/wp-content/uploads/2022/12/4.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/1.jpg",
     "https://uispl.in/wp-content/uploads/2022/12/2.jpg",
     "https://uispl.in/wp-content/uploads/2022/12/3.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/4.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/t4.jpg",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -87,7 +89,7 @@ const SealingSection = () => {
                     <img
                       src={image}
                       alt={`Slide ${index + 1}`}
-                      className="w-full h-64 sm:h-80 object-cover rounded-lg shadow-lg"
+                      className="w-full h-64 sm:h-96 object-cover rounded-lg shadow-lg"
                     />
                   </div>
                 ))}

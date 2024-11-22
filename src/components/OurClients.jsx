@@ -2,40 +2,37 @@ import React from "react";
 
 const clients = [
   {
-    name: "Client One",
-    logo: "https://via.placeholder.com/100",
+    logo: "https://uispl.in/wp-content/uploads/2022/06/acc.png",
     description: "Leading company in tech solutions.",
   },
   {
-    name: "Client Two",
-    logo: "https://via.placeholder.com/100",
+    logo: "https://uispl.in/wp-content/uploads/2022/06/Ambuja-cement.png",
     description: "Specialized in sustainable products.",
   },
   {
-    name: "Client Three",
-    logo: "https://via.placeholder.com/100",
+    logo: "https://uispl.in/wp-content/uploads/2022/06/mp-birla.png",
     description: "Top-rated service provider worldwide.",
   },
-  {
-    name: "Client Three",
-    logo: "https://via.placeholder.com/100",
-    description: "Top-rated service provider worldwide.",
-  },
-  {
-    name: "Client Three",
-    logo: "https://via.placeholder.com/100",
-    description: "Top-rated service provider worldwide.",
-  },
-  {
-    name: "Client Three",
-    logo: "https://via.placeholder.com/100",
-    description: "Top-rated service provider worldwide.",
-  },
-  {
-    name: "Client Three",
-    logo: "https://via.placeholder.com/100",
-    description: "Top-rated service provider worldwide.",
-  },
+  // {
+  //   name: "Client Three",
+  //   logo: "https://via.placeholder.com/100",
+  //   description: "Top-rated service provider worldwide.",
+  // },
+  // {
+  //   name: "Client Three",
+  //   logo: "https://via.placeholder.com/100",
+  //   description: "Top-rated service provider worldwide.",
+  // },
+  // {
+  //   name: "Client Three",
+  //   logo: "https://via.placeholder.com/100",
+  //   description: "Top-rated service provider worldwide.",
+  // },
+  // {
+  //   name: "Client Three",
+  //   logo: "https://via.placeholder.com/100",
+  //   description: "Top-rated service provider worldwide.",
+  // },
 ];
 
 const OurClients = () => {

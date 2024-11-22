@@ -1,8 +1,30 @@
+import { useState } from "react";
 import herosectionimage from "../assets/banner_bg.png";
 import { FiArrowRight } from "react-icons/fi";
 import Navbar from "./Navbar";
 
 const HeroSection = () => {
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  const handlePhoneChange = (e) => {
+    setPhoneNumber(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    if (phoneNumber) {
+      // Construct the WhatsApp message including the phone number
+      const whatsappMessage = `Hello, 
+I would like to get in touch with you.
+User's Phone Number: ${phoneNumber}`;
+
+      // Replace '9875563641' with your WhatsApp number
+      const whatsappURL = `https://wa.me/9875563641?text=${encodeURIComponent(whatsappMessage)}`;
+
+      // Open WhatsApp URL in a new tab
+      window.open(whatsappURL, "_blank");
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -42,9 +64,14 @@ const HeroSection = () => {
               <input
                 type="tel"
                 placeholder="Phone Number"
+                value={phoneNumber}
+                onChange={handlePhoneChange}
                 className="h-16 lg:h-16 px-2 md:px-4 flex-grow text-sm md:text-base lg:text-lg text-black border-none outline-none"
               />
-              <button className="h-16 lg:h-16 bg-yellow-500 px-5 md:px-5 lg:px-6 text-white hover:bg-yellow-600">
+              <button
+                onClick={handleSubmit}
+                className="h-16 lg:h-16 bg-yellow-500 px-5 md:px-5 lg:px-6 text-white hover:bg-yellow-600"
+              >
                 <FiArrowRight size={22} />
               </button>
             </div>

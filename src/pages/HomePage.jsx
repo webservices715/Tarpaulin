@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import DeliveryServices from "../components/DeliveryServices";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
@@ -9,6 +10,10 @@ import OurClients from "../components/OurClients";
 import AboutComp from "../components/AboutComp";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []); 
+
   return (
     <div>
       <HeroSection />

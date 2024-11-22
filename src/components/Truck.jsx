@@ -3,11 +3,15 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Truck = () => {
   const sliderImages = [
-    'https://uispl.in/wp-content/uploads/2022/12/t11.jpg',
-    'https://uispl.in/wp-content/uploads/2022/12/t12.jpg',
-    'https://uispl.in/wp-content/uploads/2022/12/t1.jpg',
-    'https://uispl.in/wp-content/uploads/2022/12/t2.jpg',
-    'https://uispl.in/wp-content/uploads/2022/12/t4.jpg',
+    "https://uispl.in/wp-content/uploads/2022/12/t4.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/t5.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/t6.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/t7.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/t8.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/t9.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/t12.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/t2.jpg",
+    "https://uispl.in/wp-content/uploads/2022/12/t3.jpg",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -61,7 +65,7 @@ const Truck = () => {
             <button
               onClick={handlePrev}
               className={`absolute md:left-[-30px] left-[-10px] z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 ${
-                currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
+                currentIndex === 0 ? "opacity-0 cursor-not-allowed" : ""
               }`}
               disabled={currentIndex === 0}
             >
@@ -97,7 +101,7 @@ const Truck = () => {
               onClick={handleNext}
               className={`absolute md:right-[-30px] right-[-10px] z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 ${
                 currentIndex === sliderImages.length - 1
-                  ? "opacity-50 cursor-not-allowed"
+                  ? "opacity-0 cursor-not-allowed"
                   : ""
               }`}
               disabled={currentIndex === sliderImages.length - 1}
