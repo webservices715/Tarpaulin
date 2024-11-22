@@ -105,10 +105,6 @@ function TestimonialSection() {
                 </p>
               </div>
             </div>
-
-            <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-              &mdash; Rajesh Kumar
-            </footer>
           </blockquote>
 
           <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
@@ -173,10 +169,6 @@ function TestimonialSection() {
                 </p>
               </div>
             </div>
-
-            <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-              &mdash; Priya Verma
-            </footer>
           </blockquote>
 
           <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
@@ -241,10 +233,6 @@ function TestimonialSection() {
                 </p>
               </div>
             </div>
-
-            <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-              &mdash; Michael Scott
-            </footer>
           </blockquote>
         </div>
       </div>
