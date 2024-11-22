@@ -15,7 +15,7 @@ function AboutComp() {
               <div className="flex items-start gap-4">
                 <span className="bg-orange-400 w-[70px] h-[15px] rounded-full mt-1"></span>
                 <p>
-                  Universe Inspection Services Pvt. Ltd. (UISPL) is a growing
+                  Satyakarta is a growing
                   organization specializing in covering commodity-loaded rakes
                   with tarpaulins, providing escorting services, and other
                   value-added services across India. With over 20 years of
@@ -83,7 +83,7 @@ function AboutComp() {
             <div className="flex items-start gap-4">
               <span className="bg-orange-400  w-[70px] h-[10px] rounded-full mt-2"></span>
               <p>
-              Universe Inspection Services Pvt. Ltd. (UISPL) is a growing
+                  Satyakarta is a growing
                   organization specializing in covering commodity-loaded rakes
                   with tarpaulins, providing escorting services, and other
                   value-added services across India. With over 20 years of

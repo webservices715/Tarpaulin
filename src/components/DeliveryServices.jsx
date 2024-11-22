@@ -18,7 +18,7 @@ const DeliveryServices = () => {
           Delivery Services
         </h2> */}
         <p className="text-gray-600 mt-4 leading-loose text-sm sm:text-base">
-          Universe Inspection Services Pvt. Ltd. (UISPL) developed a strong,
+          Satyakarta developed a strong,
           dedicated team to offer few special services in the sector of Rake /
           Plot covering and Escorting services for the transportation of Coal
           and all other mineral products.

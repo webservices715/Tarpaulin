@@ -75,7 +75,7 @@ const Card = () => {
           Our Services
         </h1>
         <p className="text-gray-700 text-center max-w-4xl mx-auto mb-8">
-          UISPL developed a strong, dedicated team to offer special services in
+          Satyakarta developed a strong, dedicated team to offer special services in
           the sector of Rake/Plot covering and Escorting services for the
           transportation of Coal and all other mineral products. Here are the
           services we provide:
