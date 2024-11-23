@@ -10,12 +10,13 @@ const Footer = () => {
           {/* Footer Logo and Info */}
           <div className="space-y-4">
             <a to="index.html">
-              <img
-                src={logo}
-                alt="Footer Logo"
-                className="w-24 sm:w-32"
-              />
+              <img src={logo} alt="Footer Logo" className="w-24 sm:w-32" />
             </a>
+            <div className="mt-6 text-sm sm:text-base text-gray-50">
+              <p>GST No: JBPS20751D</p>
+              {/* <p>PAN No: [Insert PAN]</p> */}
+            </div>
+
             <div className="working_hours space-y-1">
               <p className="font-bold text-sm sm:text-base">Working Hours:</p>
               <p className="text-sm sm:text-base">
@@ -32,22 +33,34 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Category</h4>
             <ul className="space-y-2 text-sm sm:text-base">
               <li>
-                <NavLink to="/about" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
+                <NavLink
+                  to="/about"
+                  className="hover:text-[#6345f3] transition-all ease-in-out duration-300"
+                >
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/service" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
+                <NavLink
+                  to="/service"
+                  className="hover:text-[#6345f3] transition-all ease-in-out duration-300"
+                >
                   Services
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/gallery" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
+                <NavLink
+                  to="/gallery"
+                  className="hover:text-[#6345f3] transition-all ease-in-out duration-300"
+                >
                   Gallery
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="hover:text-[#6345f3] transition-all ease-in-out duration-300">
+                <NavLink
+                  to="/contact"
+                  className="hover:text-[#6345f3] transition-all ease-in-out duration-300"
+                >
                   Contact Us
                 </NavLink>
               </li>
@@ -80,10 +93,11 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-10 border-t border-gray-700 pt-6">
+        <div className="mt-10 border-t flex justify-between border-gray-700 pt-6">
           <div className="flex flex-wrap items-center justify-between text-sm sm:text-base">
             <p>
-              Copyright &copy; {new Date().getFullYear()} All rights reserved | This template is made with{" "}
+              Copyright &copy; {new Date().getFullYear()} All rights reserved |
+              This template is made with{" "}
               <i className="fa fa-heart text-red-500"></i> by{" "}
               <a
                 to="#"
@@ -109,7 +123,12 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
+          <p>GST No: JBPS20751D</p>
+
+          
         </div>
+        
       </div>
     </footer>
   );
