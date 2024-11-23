@@ -14,7 +14,6 @@ const HeroSection = () => {
 
   const handleSubmit = () => {
     if (phoneNumber) {
-      // Construct the WhatsApp message including the phone number
       const whatsappMessage = `Hello, 
 I would like to get in touch with you.
 User's Phone Number: ${phoneNumber}`;
