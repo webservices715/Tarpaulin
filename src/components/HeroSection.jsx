@@ -41,7 +41,7 @@ User's Phone Number: ${phoneNumber}`;
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold  mb-4 md:leading-snug text-white">
               Satyakarta
             </h1>
-            <p className="text-sm md:text-sm lg:text-sm text-white mb-4 font-semibold">
+            <p className="text-sm md:text-md lg:text-lg text-white mb-4 font-semibold">
             Your Trusted Partner for Secure Commodity Transit Solutions
             </p>
            
