@@ -38,9 +38,12 @@ User's Phone Number: ${phoneNumber}`;
         <div className="relative z-10 flex flex-col justify-center h-full px-6 md:px-16 lg:px-32">
           <div className="max-w-lg mx-auto md:mx-0 text-center md:text-left">
             {/* Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold md:mb-6 mb-4 md:leading-snug text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold  mb-4 md:leading-snug text-white">
               Satyakarta
             </h1>
+            <p className="text-sm md:text-sm lg:text-sm text-white mb-4 font-semibold">
+            Your Trusted Partner for Secure Commodity Transit Solutions
+            </p>
            
             {/* Input Group */}
             <div className="flex items-center justify-center  md:justify-start w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto md:mx-0">
