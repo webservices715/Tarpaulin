@@ -1,10 +1,10 @@
 import React from "react";
-import service03 from "../assets/service03.jpg";
-import service01 from "../assets/service01.jpeg";
-import service02 from "../assets/service02.jpg";
-import service04 from "../assets/service04.jpeg";
-import service05 from "../assets/service05.jpeg";
-import service06 from "../assets/service06.jpeg";
+import service03 from "../assets/services/service03.jpg";
+import service01 from "../assets/services/service01.jpeg";
+import service02 from "../assets/services/service02.jpg";
+import service04 from "../assets/services/service04.jpeg";
+import service05 from "../assets/services/service05.jpeg";
+import service06 from "../assets/services/service06.jpeg";
 
 const CardService = ({ title, description, image }) => (
   <div className="w-[25rem] h-[38rem] bg-gradient-to-r from-white to-gray-50 shadow-xl rounded-lg overflow-hidden flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-2xl hover:scale-105">

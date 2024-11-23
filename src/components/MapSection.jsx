@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import service01 from '../assets/service01.jpeg';
+import service01 from '../assets/services/service01.jpeg';
 
 const MapSection = () => {
   return (

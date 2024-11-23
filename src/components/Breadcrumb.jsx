@@ -1,13 +1,13 @@
 import React from "react";
-
+import service01 from "../assets/services/service01.jpeg";
 const Breadcrumb = ({title,image}) => {
   return (
     <div className="relative w-full h-[35rem]">
     {/* Background Image */}
     <div className="absolute inset-0">
       <img
-        src="https://images.pexels.com/photos/6572431/pexels-photo-6572431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Ship Background"
+        src={service01}
+        alt="Background"
         className="w-full h-full object-cover"
       />
       {/* Overlay */}
