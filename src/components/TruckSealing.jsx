@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
+import service59 from "../assets/services/service59.jpg";
+import service60 from "../assets/services/service60.jpg";
 const TruckSealing = () => {
   return (
     <div className="bg-gray-50 min-h-screen py-24 px-6 md:px-12 lg:px-20">
@@ -46,12 +47,12 @@ const TruckSealing = () => {
                     style={{ flex: "0 0 auto" }}
                   >
                     <img
-                      src={"https://uispl.in/wp-content/uploads/2022/12/f1.jpg"}
+                      src={service59}
                       alt={'image'}
                       className="w-full h-96 object-cover rounded-xl shadow-lg"
                     />
                     <img
-                      src={"https://uispl.in/wp-content/uploads/2022/12/f2.jpg"}
+                      src={service60}
                       alt={`image`}
                       className="w-full h-96 object-cover rounded-xl shadow-lg"
                     />

@@ -1,17 +1,26 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import service49 from "../assets/services/service49.jpg"; 
+import service50 from "../assets/services/service50.jpg";
+import service51 from "../assets/services/service51.jpg";
+import service52 from "../assets/services/service52.jpg";
+import service54 from "../assets/services/service54.jpg";
+import service55 from "../assets/services/service55.jpg";
+import service56 from "../assets/services/service56.jpg";
+import service57 from "../assets/services/service57.jpg";
+import service58 from "../assets/services/service58.jpg";
 
 const Truck = () => {
   const sliderImages = [
-    "https://uispl.in/wp-content/uploads/2022/12/t4.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/t5.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/t6.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/t7.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/t8.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/t9.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/t12.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/t2.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/t3.jpg",
+    service49,
+    service50,
+    service51,
+    service52,
+    service54,
+    service55,
+    service56,
+    service57,
+    service58,
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -57,15 +66,14 @@ const Truck = () => {
           </p>
         </div>
 
-        {/* Image Slider */}
         <div className="mt-12 relative">
           
           <div className="relative flex items-center">
             {/* Left Arrow */}
             <button
               onClick={handlePrev}
-              className={`absolute md:left-[-30px] left-[-10px] z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 ${
-                currentIndex === 0 ? "opacity-0 cursor-not-allowed" : ""
+              className={`absolute md:eft-[-30px] left-[-12px] z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 ${
+                currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
               }`}
               disabled={currentIndex === 0}
             >
@@ -77,7 +85,9 @@ const Truck = () => {
               <div
                 className="flex transition-transform duration-500"
                 style={{
-                  transform: `translateX(-${currentIndex * 100}%)`,
+                  transform: `translateX(-${
+                    currentIndex * (window.innerWidth < 640 ? 100 : 33.33)
+                  }%)`,
                 }}
               >
                 {sliderImages.map((image, index) => (
@@ -89,7 +99,7 @@ const Truck = () => {
                     <img
                       src={image}
                       alt={`Slide ${index + 1}`}
-                      className="w-full h-96 object-cover rounded-lg shadow-lg"
+                      className="w-full h-64 sm:h-96 object-cover rounded-lg shadow-lg"
                     />
                   </div>
                 ))}
@@ -99,12 +109,15 @@ const Truck = () => {
             {/* Right Arrow */}
             <button
               onClick={handleNext}
-              className={`absolute md:right-[-30px] right-[-10px] z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 ${
-                currentIndex === sliderImages.length - 1
-                  ? "opacity-0 cursor-not-allowed"
+              className={`absolute md:right-[-30px] right-[-12px] z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 ${
+                currentIndex === sliderImages.length - (window.innerWidth < 640 ? 1 : 3)
+                  ? "opacity-50 cursor-not-allowed"
                   : ""
               }`}
-              disabled={currentIndex === sliderImages.length - 1}
+              disabled={
+                currentIndex ===
+                sliderImages.length - (window.innerWidth < 640 ? 1 : 3)
+              }
             >
               <FaArrowRight />
             </button>

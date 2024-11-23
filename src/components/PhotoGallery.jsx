@@ -1,4 +1,38 @@
 import React, { useState } from 'react';
+import service10 from '../assets/services/service10.jpg';
+import service11 from '../assets/services/service11.jpg';
+import service12 from '../assets/services/service12.jpg';
+import service13 from '../assets/services/service13.jpg';
+import service14 from '../assets/services/service14.jpg';
+import service15 from '../assets/services/service15.jpg';
+import service16 from '../assets/services/service16.jpg';
+import service17 from '../assets/services/service17.jpg';
+import service18 from '../assets/services/service18.jpg';
+import service19 from '../assets/services/service19.jpg';
+import service20 from '../assets/services/service20.jpg';
+import service21 from '../assets/services/service21.jpg';
+import service22 from '../assets/services/service22.jpg';
+import service23 from '../assets/services/service23.jpg';
+import service24 from '../assets/services/service24.jpg';
+import service25 from '../assets/services/service25.jpg';
+import service26 from '../assets/services/service26.jpg';
+import service27 from '../assets/services/service27.jpg';
+import service28 from '../assets/services/service28.jpg';
+import service29 from '../assets/services/service29.jpg';
+import service30 from '../assets/services/service30.jpg';
+import service31 from '../assets/services/service31.jpg';
+import service32 from '../assets/services/service32.jpg';
+import service33 from '../assets/services/service33.jpg';
+import service34 from '../assets/services/service34.jpg';
+import service35 from '../assets/services/service35.jpg';
+import service36 from '../assets/services/service36.jpg';
+import service37 from '../assets/services/service37.jpg';
+import service38 from '../assets/services/service38.jpg';
+import service39 from '../assets/services/service39.jpeg';
+import service40 from '../assets/services/service40.jpeg';
+import service41 from '../assets/services/service41.jpeg';
+import service42 from '../assets/services/service42.jpeg';
+import service43 from '../assets/services/service43.jpg';
 
 const Gallery = () => {
   const [fullscreen, setFullscreen] = useState(false);
@@ -6,54 +40,40 @@ const Gallery = () => {
 
   
   const images = [
-    'https://uispl.in/wp-content/uploads/2022/06/Picture-1-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Picture-2-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Picture-3-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Picture-4-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Picture-5-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Picture-6-1-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Picture-7-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-1-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-2-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-3-1-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-4-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-5-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-6-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-7-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-8-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-9-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-10-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-11-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-12-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-13-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-15-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Wgn-Cov-17-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/HDCG-Pic-1.-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/HDCG-Pic-2-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Plot-covering-by-Bumboo-1-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Plot-covering-by-Bumboo-2-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Plot-Cov-1-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/Plot-Cov-2-300x300.jpg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-5.08.48-PM-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-5.08.49-PM-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-5.08.50-PM-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.36-PM-1-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.37-PM-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.37-PM-2-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.37-PM-1-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.41-PM-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.42-PM-1-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.43-PM-2-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.43-PM-1-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.43-PM-2-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.47-PM-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.46-PM-2-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.45-PM-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.46-PM-1-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.45-PM-2-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.45-PM-1-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.44-PM-300x300.jpeg',
-    'https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.41-PM-300x300.jpeg',
+    service10,
+    service11,
+    service12,
+    service13,
+    service14,
+    service15,
+    service16,
+    service17,
+    service18,
+    service19,
+    service20,
+    service21,
+    service22,
+    service23,
+    service24,
+    service25,
+    service26,
+    service27,
+    service28,
+    service29,
+    service30,
+    service31,
+    service32,
+    service33,
+    service34,
+    service35,
+    service36,
+    service37,
+    service38,
+    service39,
+    service40,
+    service41,
+    service42,
+    service43
   ];
 
   // Open fullscreen mode

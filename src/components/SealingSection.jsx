@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
+import service44 from "../assets/services/service44.jpg";
+import service45 from "../assets/services/service45.jpg";
+import service46 from "../assets/services/service46.jpg";
+import service47 from "../assets/services/service47.jpg";
+import service48 from "../assets/services/service48.jpg";
 const SealingSection = () => {
   const sliderImages = [
-    "https://uispl.in/wp-content/uploads/2022/12/4.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/1.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/2.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/3.jpg",
-    "https://uispl.in/wp-content/uploads/2022/12/t4.jpg",
+    service44,
+    service45,
+    service46,
+    service47,
+    service48
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -2,6 +2,15 @@ import React from "react";
 import { IoIosSend } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/Logo.png";
+import service10 from "../assets/services/service10.jpg";
+import service11 from "../assets/services/service11.jpg";
+import service12 from "../assets/services/service12.jpg";
+import service13 from "../assets/services/service13.jpg";
+import service14 from "../assets/services/service14.jpg";
+import service15 from "../assets/services/service15.jpg";
+import service16 from "../assets/services/service16.jpg";
+import service17 from "../assets/services/service17.jpg";
+import service18 from "../assets/services/service18.jpg";
 const Footer = () => {
   return (
     <footer className="footer-area bg-gray-900 text-white">
@@ -72,14 +81,15 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Our Gallery</h4>
             <div className="grid grid-cols-4 gap-2">
               {[
-                "https://uispl.in/wp-content/uploads/2022/06/Picture-1-300x300.jpg",
-                "https://uispl.in/wp-content/uploads/2022/06/Picture-6-1-300x300.jpg",
-                "https://uispl.in/wp-content/uploads/2022/06/Plot-covering-by-Bumboo-2-300x300.jpg",
-                "https://uispl.in/wp-content/uploads/2022/06/Plot-Cov-2-300x300.jpg",
-                "https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-5.08.49-PM-1-300x300.jpeg",
-                "https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.38-PM-300x300.jpeg",
-                "https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.40-PM-1-300x300.jpeg",
-                "https://uispl.in/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-01-at-4.57.47-PM-1-300x300.jpeg",
+                service10,
+                service11,
+                service12,
+                service13,
+                service14,
+                service15,
+                service16,
+                service17,
+                service18,
               ].map((src, index) => (
                 <img
                   key={index}
