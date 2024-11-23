@@ -45,7 +45,7 @@ I would like to request a service:
           </h2>
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="form-group">
+              <div className="form-group col-span-2 md:col-span-1">
                 <input
                   type="text"
                   name="name"
@@ -58,7 +58,7 @@ I would like to request a service:
                   required
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group col-span-2 md:col-span-1">
                 <input
                   type="email"
                   name="email"
