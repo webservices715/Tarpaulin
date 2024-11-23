@@ -2,7 +2,7 @@ import { useState } from "react";
 import herosectionimage from "../assets/banner_bg.png";
 import { FiArrowRight } from "react-icons/fi";
 import Navbar from "./Navbar";
-
+import service05 from "../assets/service05.jpeg";
 const HeroSection = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
@@ -30,7 +30,7 @@ User's Phone Number: ${phoneNumber}`;
       <Navbar />
       <div
         className="relative h-screen bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: `url(${herosectionimage})` }}
+        style={{ backgroundImage: `url(${service05})` }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -46,8 +46,9 @@ User's Phone Number: ${phoneNumber}`;
             {/* Input Group */}
             <div className="flex items-center justify-center  md:justify-start w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto md:mx-0">
               <select className="h-16 lg:h-16 px-3 md:px-4 text-sm md:text-base lg:text-lg text-gray-600 border-none outline-none rounded-l-md">
-                {/* Country Codes */}
+             
                 <option value="+91">+91 (IN)</option>
+
               </select>
               <input
                 type="tel"
