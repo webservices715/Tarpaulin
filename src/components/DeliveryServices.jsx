@@ -24,7 +24,7 @@ const DeliveryServices = () => {
           for the transportation of Coal and all other mineral products.
         </p>
         <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
-          From the last two decades we are successfully offering the folowing
+          From the last two decades we are successfully offering the following
           services:
         </p>
         <div className="flex lg:justify-start">
