@@ -36,62 +36,6 @@ const OfficeSection = () => {
                 </div>
               </div>
 
-              {/* Always visible offices */}
-              <div className="office-item flex items-start gap-4 bg-white p-4 rounded-lg shadow-lg transition-transform duration-200 hover:scale-105">
-                <MdLocationPin size={30} className="text-purple-700 mt-1" />
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-800">Noida</h4>
-                  <p className="text-gray-600">Uttar Pradesh, India</p>
-                </div>
-              </div>
-              <div className="office-item flex items-start gap-4 bg-white p-4 rounded-lg shadow-lg transition-transform duration-200 hover:scale-105">
-                <MdLocationPin size={30} className="text-purple-700 mt-1" />
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-800">
-                    Chennai
-                  </h4>
-                  <p className="text-gray-600">Tamil Nadu, India</p>
-                </div>
-              </div>
-
-              {/* More Cities - Initially hidden */}
-              {showMoreCities &&
-                [
-                  { name: "Haldia", state: "West Bengal", country: "India" },
-                  { name: "Raniganj", state: "West Bengal", country: "India" },
-                  { name: "Durgapur", state: "West Bengal", country: "India" },
-                  { name: "Dhanbad", state: "Jharkhand", country: "India" },
-                  {
-                    name: "Visakhapatnam",
-                    state: "Andhra Pradesh",
-                    country: "India",
-                  },
-                ].map((city, index) => (
-                  <div
-                    key={index}
-                    className="office-item flex items-start gap-4 bg-white p-4 rounded-lg shadow-lg transition-transform duration-200 hover:scale-105"
-                  >
-                    <MdLocationPin size={30} className="text-purple-700 mt-1" />
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-800">
-                        {city.name}
-                      </h4>
-                      <p className="text-gray-600">
-                        {city.state}, {city.country}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-            </div>
-
-            {/* Toggle Button */}
-            <div className="text-center mt-6">
-              <button
-                onClick={toggleCities}
-                className="text-lg font-bold text-purple-700 hover:text-purple-600 focus:outline-none"
-              >
-                {showMoreCities ? "Show Less Offices" : "More Offices"}
-              </button>
             </div>
           </div>
 

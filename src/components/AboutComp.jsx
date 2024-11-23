@@ -1,5 +1,5 @@
 import React from "react";
-import aboutUsImg from "../assets/aboutus.jpg";
+import aboutUsImg from "../assets/Picture-2.jpg";
 
 function AboutComp() {
   return (
