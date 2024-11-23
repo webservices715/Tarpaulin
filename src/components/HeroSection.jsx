@@ -2,6 +2,9 @@ import { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import Navbar from "./Navbar";
 import herosectionimage from "../assets/herosection.jpg";
+import hero_image from "../assets/header_image.jpeg";
+
+
 const HeroSection = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
@@ -16,10 +19,8 @@ const HeroSection = () => {
 I would like to get in touch with you.
 User's Phone Number: ${phoneNumber}`;
 
-      // Replace '9875563641' with your WhatsApp number
       const whatsappURL = `https://wa.me/9875563641?text=${encodeURIComponent(whatsappMessage)}`;
 
-      // Open WhatsApp URL in a new tab
       window.open(whatsappURL, "_blank");
     }
   };
@@ -29,10 +30,10 @@ User's Phone Number: ${phoneNumber}`;
       <Navbar />
       <div
         className="relative h-screen bg-cover bg-top bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: `url(${herosectionimage})` }}
+        style={{ backgroundImage: `url(${hero_image})` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-65"></div>
 
         {/* Content */}
         <div className="relative z-10 flex flex-col justify-center h-full px-6 md:px-16 lg:px-32">
