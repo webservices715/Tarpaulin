@@ -8,7 +8,6 @@ import ReservationSection from "../components/ReservationSection";
 import WhyChooseUsSection from "../components/WhyChooseUs";
 import OurClients from "../components/OurClients";
 import AboutComp from "../components/AboutComp";
-
 const HomePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0); 
