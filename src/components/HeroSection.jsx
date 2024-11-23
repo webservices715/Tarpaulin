@@ -1,8 +1,7 @@
 import { useState } from "react";
-import herosectionimage from "../assets/banner_bg.png";
 import { FiArrowRight } from "react-icons/fi";
 import Navbar from "./Navbar";
-import service04 from "../assets/service04.jpeg";
+import herosectionimage from "../assets/herosection.jpg";
 const HeroSection = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
@@ -29,8 +28,8 @@ User's Phone Number: ${phoneNumber}`;
     <>
       <Navbar />
       <div
-        className="relative h-screen bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: `url(${service04})` }}
+        className="relative h-screen bg-cover bg-top bg-no-repeat overflow-hidden"
+        style={{ backgroundImage: `url(${herosectionimage})` }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
