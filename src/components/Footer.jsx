@@ -107,13 +107,13 @@ const Footer = () => {
           <div className="flex flex-wrap items-center justify-between text-sm sm:text-base">
             <p>
               Copyright &copy; {new Date().getFullYear()} All rights reserved |
-              This template is made with{" "}
+              Made with{" "}
               <i className="fa fa-heart text-red-500"></i> by{" "}
               <a
-                to="#"
+                href="https://portfolio-tau-six-46.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#6345f3] transition-all ease-in-out duration-300"
+                className="text-[#6345f3] transition-all ease-in-out duration-300"
               >
                 GREDX
               </a>
