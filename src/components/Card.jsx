@@ -5,6 +5,8 @@ import service02 from "../assets/services/service02.jpg";
 import service04 from "../assets/services/service04.jpeg";
 import service05 from "../assets/services/service05.jpeg";
 import service06 from "../assets/services/service06.jpeg";
+import service07 from "../assets/services/service04.jpeg";
+import service08 from "../assets/services/service06.jpeg"; 
 
 const CardService = ({ title, description, image }) => (
   <div className="w-[25rem] h-[38rem] bg-gradient-to-r from-white to-gray-50 shadow-xl rounded-lg overflow-hidden flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-2xl hover:scale-105">
@@ -65,6 +67,18 @@ const Card = () => {
       description:
         "We also arrange services of Rake/Truck Loading Supervision, Sampling / Testing of material and truck/rake sealing by our sister concern M/s. Universal Survey & Analysis Services Pvt. Ltd. All these services will be provided under our supervision.",
       image: service06,
+    },
+    {
+      title: "Pan India Service Provider",
+      description:
+        "We are a PAN India service provider for Plot Cover, Tarpaulin Cover, Railway Wagon Cover, Escort services, and other plastic items, ensuring reliable and efficient solutions tailored to your needs.",
+      image: service07, // Replace with actual image or remove if not available
+    },
+    {
+      title: "Other Plastic Items",
+      description:
+        "We provide a range of plastic items for industrial and logistical needs, ensuring durable and high-quality materials for various applications.",
+      image: service08, // Replace with actual image or remove if not available
     },
   ];
 

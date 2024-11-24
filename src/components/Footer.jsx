@@ -23,7 +23,8 @@ const Footer = () => {
             </a>
             <div className="mt-6 text-sm sm:text-base text-gray-50">
               <p>GST No: JBPS20751D</p>
-              {/* <p>PAN No: [Insert PAN]</p> */}
+              <p>CIN : U13925CT2024PTC016005</p>
+              <p>PAN : ABNCS0227N</p>
             </div>
 
             <div className="working_hours space-y-1">
@@ -103,12 +104,17 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-10 border-t flex justify-between border-gray-700 pt-6">
+        <div className="mt-10 border-t flex md:flex-row flex-col gap-4 justify-between border-gray-700 pt-6">
+          <div className="flex flex-col gap-2">
+            <p>GST No: JBPS20751D</p>
+            <p>CIN : U13925CT2024PTC016005</p>
+            <p>PAN : ABNCS0227N</p>
+          </div>
+
           <div className="flex flex-wrap items-center justify-between text-sm sm:text-base">
             <p>
               Copyright &copy; {new Date().getFullYear()} All rights reserved |
-              Made with{" "}
-              <i className="fa fa-heart text-red-500"></i> by{" "}
+              Made with <i className="fa fa-heart text-red-500"></i> by{" "}
               <a
                 href="https://portfolio-tau-six-46.vercel.app/"
                 target="_blank"
@@ -133,12 +139,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
-          <p>GST No: JBPS20751D</p>
-
-          
         </div>
-        
       </div>
     </footer>
   );
